@@ -38,6 +38,11 @@ function greet(greeting) {
   if (!greeting) {
     throw new Error("There was no greeting given.");
   }
-
   console.log(greeting);
+}
+
+try {
+  greet()
+} catch (error) {
+console.log(`Hello World!`)
 }
